@@ -20,6 +20,10 @@ body {
     color: #555;
 }
 
+a.unlink {
+    text-decoration: none;
+}
+
 h1,
 h2,
 strong {

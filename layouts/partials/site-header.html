@@ -2,8 +2,8 @@
 	<div>
 		{{ partial "site-navigation.html" . }}
 		<div>
-			<a href="{{ .Site.BaseURL }}">
-				<h2>
+			<a href="{{ .Site.BaseURL }}" class="unlink">
+				<h2 >
 					{{ .Title | default .Site.Title }}
 				</h2>
 			</a>

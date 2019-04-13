@@ -16,9 +16,9 @@ pages. */}}
 <div>
 	{{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
 	{{ with .Site.GetPage "section" $section_name }}
-	<h1>
+	<h2>
 		Recent {{ .Title }}
-	</h1>
+	</h2>
 	{{ end }}
 
 	{{ $n_posts := $.Param "recent_posts_number" | default 3 }}
