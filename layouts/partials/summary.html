@@ -1,16 +1,4 @@
-<div>
-	<div>
-		<h4>
-			<a href="{{ .URL }}">
-				{{ .Title }}
-			</a>
-		</h4>
-		{{/* For now, show just the post title in the main section.
-		TODO: Have two kind of posts:
-		- Normal or long ones, in which I present just the title and a link.
-		- Thought or twit like. */}}
-		{{/* <div>
-			{{ .Summary }}
-		</div> */}}
-	</div>
-</div>
+<li>
+	<h4><a href="{{ .URL }}"> {{ .Title }}</a></h4>
+	<time><time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time></time>
+</li>

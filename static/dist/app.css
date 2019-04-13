@@ -29,3 +29,18 @@ h2,
 strong {
     color: #333;
 }
+
+ul.postsList {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+li h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline-block;
+}
+
+li time {
+    float: right;
+}

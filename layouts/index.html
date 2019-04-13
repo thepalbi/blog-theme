@@ -25,10 +25,10 @@ pages. */}}
 
 	<section>
 		{{/* Range through the first $n_posts items of the section */}}
-		{{ range (first $n_posts $section) }}
-		<div>
+		{{ range (first $n_posts $section).ByDate }}
+		<ul class="postsList">
 			{{ partial "summary.html" . }}
-		</div>
+		</ul>
 		{{ end }}
 	</section>
 
