@@ -24,12 +24,12 @@ pages. */}}
 	{{ $n_posts := $.Param "recent_posts_number" | default 3 }}
 
 	<section>
-		{{/* Range through the first $n_posts items of the section */}}
-		{{ range (first $n_posts $section).ByDate }}
 		<ul class="postsList">
-			{{ partial "summary.html" . }}
+			{{/* Range through the first $n_posts items of the section */}}
+			{{ range (first $n_posts $section).ByDate }}
+				{{ partial "summary.html" . }}
+			{{ end }}
 		</ul>
-		{{ end }}
 	</section>
 
 	{{ if ge $section_count (add $n_posts 1) }}
