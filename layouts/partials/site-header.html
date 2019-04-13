@@ -2,14 +2,11 @@
 	<div>
 		{{ partial "site-navigation.html" . }}
 		<div>
-			<h1>
-				{{ .Title | default .Site.Title }}
-			</h1>
-			{{ with .Params.description }}
-			<h2>
-				{{ . }}
-			</h2>
-			{{ end }}
+			<a href="{{ .Site.BaseURL }}">
+				<h2>
+					{{ .Title | default .Site.Title }}
+				</h2>
+			</a>
 		</div>
 	</div>
 </header>
