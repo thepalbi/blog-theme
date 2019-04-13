@@ -1,0 +1,17 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500');
+body {
+    margin: 0 auto;
+    /* Relative to the font-size of the element (2em means 2 times the size of the current font) */
+    max-width: 50em;
+    /* Font and text settings */
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
