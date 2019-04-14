@@ -67,3 +67,7 @@ hr {
     margin: 0;
     display: block;
 }
+
+.disqusComments {
+    margin: 2em 0;
+}
