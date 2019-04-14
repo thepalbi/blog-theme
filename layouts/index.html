@@ -25,8 +25,8 @@ pages. */}}
 
 	<section>
 		<ul class="postsList">
-			{{/* Range through the first $n_posts items of the section */}}
-			{{ range (first $n_posts $section).ByDate }}
+			{{/* Range through the first $n_posts items of the section, in decreasing order by the published date. */}}
+			{{ range (first $n_posts $section).ByDate.Reverse }}
 				{{ partial "summary.html" . }}
 			{{ end }}
 		</ul>
