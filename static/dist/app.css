@@ -8,7 +8,7 @@ body {
     /* Font and text settings */
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
-    padding: 4em 1em;
+    padding: 0em 1em 4em 1em;
 }
 
 h2 {
