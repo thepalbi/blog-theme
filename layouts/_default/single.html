@@ -8,14 +8,7 @@
 <article>
 
 	<header>
-		<p>
-			{{/*
-			CurrentSection allows us to use the section title instead of inferring from the folder.
-			https://gohugo.io/variables/page/#section-variables-and-methods
-			*/}}
-			{{/* {{with .CurrentSection.Title }}{{. | upper }}{{end}} */}}
-		</p>
-	<h1>
+	<h1 class="singlePostTitle">
 			{{- .Title -}}
 		</h1>
 		{{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
