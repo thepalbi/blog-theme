@@ -16,6 +16,10 @@ h2 {
     padding-top: 1em;
 }
 
+h2.withoutPadding {
+    padding-top: 0;
+}
+
 body {
     color: #555;
 }
@@ -71,6 +75,11 @@ hr {
 .disqusComments {
     margin: 2em 0;
 }
+
 .singlePostTitle {
     padding-top: 3em;
+}
+
+.morePosts {
+    margin-bottom: 4em;
 }

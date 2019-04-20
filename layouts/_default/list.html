@@ -4,11 +4,13 @@
 		{{- .Content -}}
 	</section>
 	<section>
-		{{ range .Paginator.Pages }}
-		<div>
-			{{- partial "summary.html" . -}}
-		</div>
-		{{ end }}
+		<ul class="postsList">
+			{{ range .Paginator.Pages }}
+			<div>
+				{{- partial "summary.html" . -}}
+			</div>
+			{{ end }}
+		</ul>
 	</section>
 	{{- template "_internal/pagination.html" . -}}
 </article>

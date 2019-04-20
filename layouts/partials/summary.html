@@ -1,12 +1,11 @@
 {{/* Post summary - used in index page to display all blog posts, and in a future, thougts */}}
 <li>
 	<div class="postsListItem">
-		{{ if eq .Type "regular" }}
-			<h4><a href="{{ .URL }}">{{ .Title }}</a></h4>
-		{{ end }}
-		<time><time>{{ .Date.Format "January 2, 2006" }}</time></time>
+			<h4><a class="unlink" href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+		<time><time>{{ .Date.Format "January 2006" }}</time></time>
 	</div>
-	{{ if eq .Type "thought" }}
-		<p>{{ .Content }}</p>
+	<p>{{ .Summary }}...</p>
+	{{ if .Truncated }}
+		<a href="{{ .RelPermalink }}">read the rest ></a>
 	{{ end }}
 </li>
